@@ -1,9 +1,13 @@
 import React from 'react';
-import Cards from './cards/cards';
+import Card from './Card/Card';
+
 const Home = () => {
     return (
         <div className="videos">
-            <Cards />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
         </div>
     );
 };
