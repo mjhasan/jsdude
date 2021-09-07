@@ -1,5 +1,4 @@
-/* video component */
-.video {
+.card {
   max-width: 400px;
   height: fit-content;
   background-color: #fff;
@@ -10,11 +9,11 @@
   padding-bottom: 1rem;
 }
 
-.video:hover {
+.card:hover {
   box-shadow: 0 0 15px 0 #e5e5e5;
 }
 
-.video p {
+.card p {
   font-size: 16px;
   font-weight: 500;
   margin: 0.5rem 0;
@@ -24,24 +23,18 @@
   overflow: hidden;
 }
 
-.video img {
+.card img {
   width: 100%;
   object-fit: cover;
 }
 
-.video .qmeta {
+.card .qmeta {
   display: flex;
   justify-content: space-between;
   padding-right: 6px;
 }
 
-.video .qmeta p {
+.card .qmeta p {
   font-size: 15px;
   font-weight: 400;
-}
-
-@media only screen and (max-width: 600px) {
-  .video {
-    width: 100%;
-  }
 }
