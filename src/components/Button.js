@@ -1,7 +1,7 @@
 import style from "../styles/Button.module.css";
 
 const Button = ({ className, children }) => {
-  return <div className={`${style.button} ${className}`}>{children}</div>;
+  return <button className={`${style.button} ${className}`}>{children}</button>;
 }
 
 export default Button;
