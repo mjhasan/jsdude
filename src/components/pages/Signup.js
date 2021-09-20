@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useHistory } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
-import classes from "../../styles/Signup.module.css";
+import style from "../../styles/Signup.module.css";
 import Button from "../Button";
 import Checkbox from "../Checkbox";
 import Form from "../Form";
@@ -34,19 +34,21 @@ export default function Signup() {
       await signUp(email, password, displayName)
       history.push('/')
     } catch (error) {
-      console.log(error);
+      console.log(error );
       setLoading(false);
       setError("Failed to create an account!");
     }
+
+
   }
 
-  return (
+ return (
     <>
       <h1>Create an account</h1>
 
       <div className="column">
         <Illustration />
-        <Form onSubmit={handleSubmit} className={`${classes.signup}`}>
+        <Form onSubmit={handleSubmit} className={`${style.signup}`}>
           <TextInput type="text"
             onChange={(e) => setDisplayName(e.target.value)}
             placeholder="Enter name"
